@@ -1,1 +1,19 @@
+# python
+__pycache__/
+*.pyc
+
+# virtual environment
+venv/
+.env
+
+# vscode
 .vscode/
+
+# vector database
+vector_store/
+
+# data files
+data/*.pdf
+
+# IDE
+.idea/
