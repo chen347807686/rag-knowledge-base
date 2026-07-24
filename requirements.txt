@@ -1,0 +1,24 @@
+# LangChain核心
+langchain
+langchain-core
+langchain-community
+
+# 通义千问 / DashScope
+dashscope
+
+# Chroma向量数据库
+langchain-chroma
+chromadb
+
+# 环境变量
+python-dotenv
+
+# PDF文档加载
+pypdf
+
+# Web接口
+fastapi
+uvicorn
+
+# Token处理
+tiktoken
