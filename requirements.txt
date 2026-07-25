@@ -1,24 +1,29 @@
-# LangChain核心
+﻿# ============================================================
+# RAG 知识库问答系统 — 依赖清单
+# 安装：pip install -r requirements.txt
+# ============================================================
+
+# ---------- LangChain 核心 ----------
 langchain
 langchain-core
 langchain-community
+langchain-text-splitters       # RecursiveCharacterTextSplitter
+langchain-openai               # ChatOpenAI（通义兼容接口）
+langchain-chroma               # Chroma 向量数据库适配层
 
-# 通义千问 / DashScope
-dashscope
-
-# Chroma向量数据库
-langchain-chroma
+# ---------- 向量数据库 ----------
 chromadb
 
-# 环境变量
-python-dotenv
+# ---------- 通义千问 / DashScope ----------
+dashscope                      # 阿里云大模型 & Embedding API
 
-# PDF文档加载
-pypdf
+# ---------- 文档加载 ----------
+pypdf                          # PDF 解析
 
-# Web接口
+# ---------- Web 服务 ----------
 fastapi
 uvicorn
 
-# Token处理
-tiktoken
+# ---------- 工具 ----------
+python-dotenv                  # 环境变量加载
+tiktoken                       # Token 计数（LangChain 内部使用）

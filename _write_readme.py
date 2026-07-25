@@ -1,4 +1,4 @@
-# RAG 知识库问答系统
+﻿content = """# RAG 知识库问答系统
 
 基于 LangChain + 通义千问 + Chroma 的 RAG（检索增强生成）问答系统。上传 PDF 文档作为知识库，即可用自然语言提问，大模型基于文档内容给出回答。
 
@@ -103,3 +103,7 @@ curl -X POST http://localhost:8000/ask -H "Content-Type: application/json" -d '{
 | RETRIEVAL_TOP_K | 4 | 每次检索返回的最相似文档块数 |
 | LLM_MODEL | qwen3.7-plus | 通义千问模型版本 |
 | VECTOR_DB_PATH | ./vector_store | 向量数据库持久化路径 |
+"""
+with open("D:/AI/rag_project/README.md", "w", encoding="utf-8") as f:
+    f.write(content)
+print("done")
