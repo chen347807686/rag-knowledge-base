@@ -83,13 +83,13 @@ python main.py
 ### 4. 启动 Web 服务
 
 ```bash
-uvicorn app.api:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.api:app --reload --host 0.0.0.0 --port 8001
 ```
 
 ### 5. 测试问答
 
 ```bash
-curl -X POST http://localhost:8000/ask -H "Content-Type: application/json" -d '{"question": "什么是自然语言处理？"}'
+curl -X POST http://localhost:8001/ask -H "Content-Type: application/json" -d '{"question": "什么是自然语言处理？"}'
 ```
 
 ---
